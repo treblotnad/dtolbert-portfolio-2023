@@ -8,11 +8,31 @@ body{
 
 header{
     display:flex;
+    
+    
+    
+}
 
+h1{
+ font-size: 250%;
+}
+
+#hero-image{
+    background-image: url("../images/pano-image.jpeg");
+    height: 50%;
+    background-repeat: no-repeat;
+    display:flex;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width:100%;
+    justify-content: space-between;
+    padding: 50px;
 }
 
 nav{
-
+    font-size: 150%;
+    
 }
 
 main{
