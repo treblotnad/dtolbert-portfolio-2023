@@ -22,6 +22,12 @@ h2{
     font-size: 200%;
 }
 
+header img{
+    height: 150px;
+    flex: 0,0,0;
+    border: solid 1px black;
+    border-radius: 50px;
+}
 h3{
     font-size: 180%;
 }
@@ -61,10 +67,12 @@ main{
 footer{
     display:flex;
     Justify-content: space-between;
+    padding-right: 25px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 795px) {
     header,nav,footer{
     flex-direction: column;
     align-items: center;
+    
     }
 }
