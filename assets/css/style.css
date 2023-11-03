@@ -1,0 +1,119 @@
+:root{
+    --c-main: rgb(101, 101, 101);
+    --c-secondary: rgba(59, 156, 205, 0.801);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display:flex;
+    background-color: var(--c-main);;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 300%;
+    color: var(--c-main);
+    background-color: var(--c-secondary);
+    
+    padding-left: 4rem;
+    padding-right: 1rem;
+    width:100%;
+    text-align: center;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav a{
+    margin: 1rem;
+    text-decoration: none;
+    color: var(--c-secondary);
+    border-bottom: solid var(--c-secondary);
+    padding: .5rem;
+    font-size: 150%;
+}
+
+nav a:hover{
+    background-color:var(--c-secondary);
+    color: var(--c-main);
+}
+
+main h2{
+    font-size: 150%;
+    color: var(--c-main);
+    border-bottom: solid var(--c-main);
+    padding-bottom:.75rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+main p{
+    padding:1.5rem;
+    color: var(--c-main);
+    font-weight: bold;
+}
+
+#hero-image{
+    height: 300px;
+    width:100%;
+    background-image:linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)), url("../images/pano-image.jpeg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items: end;
+}
+
+#hero-text{
+    margin: 1rem;
+    font-size: 200%;
+    color:var(--c-secondary);
+    background-color: var(--c-main);
+    text-align:center;
+    padding: 1rem;
+}
+
+#about{
+    display:flex;
+    flex-direction: column;
+}
+
+#work{
+    display:flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 769px) {
+    #hero-image {
+        justify-content: right;
+    }   
+@media screen and (min-width: 769px) {
+    #hero-text {
+        margin-right: 2rem;
+    }   
+
+@media screen and (min-width: 993px) {
+    header, #about, #work{
+      flex-direction: row;
+    }
+
+@media screen and (min-width: 993px) {
+    h1 {
+        flex:0 0 400px;
+    }   
+
+@media screen and (min-width: 993px) {
+    main h2{
+          border-bottom: 0;
+          border-right: solid;
+          padding: 1rem;
+          margin-left: 3rem;
+    }
