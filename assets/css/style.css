@@ -30,7 +30,7 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
 }
-a{
+header a, footer a{
     margin: 1rem;
     text-decoration: none;
     color: var(--c-secondary);
@@ -44,7 +44,7 @@ a:hover{
     color: var(--c-main);
 }
 
-main h2, footer h3{
+main h2, footer h4{
     font-size: 180%;
     color: var(--c-main);
     border-bottom: solid var(--c-main);
@@ -103,6 +103,56 @@ footer{
     flex-direction: column;
 }
 
+#tiles{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+#tiles a{
+    margin:1rem;
+    border: 4px solid var(--c-secondary);
+    background-size: cover;
+    color: var(--c-main);
+    text-decoration: none;
+    height:200px;
+}
+
+#tiles h3{
+    background-color: var(--c-secondary);
+    font-size: 2rem;
+    padding: 1rem;
+    position:relative;
+    top: 115px;
+    width: 300px;
+}
+
+#surf-report{
+    background-image: linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)),url(../images/02-portfolio-4.jpg);
+    
+    flex: 1 0 200px;
+}
+#led-wall{
+    background-image: linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)),url(../images/02-portfolio-1.jpg);
+    flex: 1 0 200px;
+}
+#calculator{
+    background-image: linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)),url(../images/02-portfolio-2.jpg);
+    flex: 1 0 200px;
+}
+#pastel-puzzels{
+    background-image: linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)),url(../images/02-portfolio-3.jpg);
+    flex: 1 0 200px;
+}
+#run-buddy{
+    background-image: linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)),url(../images/02-run-buddy.jpg);
+    flex: 1 0 200px;
+}
+#Horiseon{
+    background-image: linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)),url(../images/01-html-css-git-homework-demo.png);
+    flex: 1 0 200px;
+}
+
 
 @media screen and (min-width: 769px) {
     #hero-image {
@@ -123,6 +173,12 @@ footer{
         justify-content: space-around;
     }   
 }
+@media screen and (min-width:769px){
+    #tiles{
+        flex-direction: row;
+    }
+}
+
 
 @media screen and (min-width: 993px) {
     header, #about, #work, footer{
@@ -136,17 +192,16 @@ footer{
 }
 
 @media screen and (min-width: 993px) {
-    main h2, h3 {
+    main h2, h4 {
         flex:0 0 150px;
     }   
 }
 
 @media screen and (min-width: 993px) {
-    main h2, footer h3{
+    main h2, footer h4{
           border-bottom: 0;
           border-right: solid;
           padding: 1rem;
           margin-left: 3rem;
-          
     }
 }
