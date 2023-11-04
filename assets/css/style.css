@@ -19,7 +19,6 @@ h1{
     font-size: 300%;
     color: var(--c-main);
     background-color: var(--c-secondary);
-    
     padding-left: 4rem;
     padding-right: 1rem;
     width:100%;
@@ -31,7 +30,7 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
 }
-nav a{
+a{
     margin: 1rem;
     text-decoration: none;
     color: var(--c-secondary);
@@ -40,13 +39,13 @@ nav a{
     font-size: 150%;
 }
 
-nav a:hover{
+a:hover{
     background-color:var(--c-secondary);
     color: var(--c-main);
 }
 
-main h2{
-    font-size: 150%;
+main h2, footer h3{
+    font-size: 180%;
     color: var(--c-main);
     border-bottom: solid var(--c-main);
     padding-bottom:.75rem;
@@ -58,6 +57,20 @@ main p{
     padding:1.5rem;
     color: var(--c-main);
     font-weight: bold;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+}
+
+#contact{
+    display:flex;
+    flex-direction: column;    
+}
+
+#contact a{
+    align-self:self-start;
 }
 
 #hero-image{
@@ -94,26 +107,46 @@ main p{
 @media screen and (min-width: 769px) {
     #hero-image {
         justify-content: right;
-    }   
+    }
+}       
 @media screen and (min-width: 769px) {
     #hero-text {
         margin-right: 2rem;
     }   
+}
+@media screen and (min-width: 769px) {
+    #contact {
+        flex-direction: row;
+        padding: 0;
+        padding-top: 2rem;
+        width: 100%;
+        justify-content: space-around;
+    }   
+}
 
 @media screen and (min-width: 993px) {
-    header, #about, #work{
+    header, #about, #work, footer{
       flex-direction: row;
     }
-
+}
 @media screen and (min-width: 993px) {
     h1 {
         flex:0 0 400px;
     }   
+}
 
 @media screen and (min-width: 993px) {
-    main h2{
+    main h2, h3 {
+        flex:0 0 150px;
+    }   
+}
+
+@media screen and (min-width: 993px) {
+    main h2, footer h3{
           border-bottom: 0;
           border-right: solid;
           padding: 1rem;
           margin-left: 3rem;
+          
     }
+}
