@@ -39,10 +39,7 @@ header a, footer a{
     font-size: 150%;
 }
 
-a:hover{
-    background-color:var(--c-secondary);
-    color: var(--c-main);
-}
+
 
 main h2, footer h4{
     font-size: 180%;
@@ -119,6 +116,7 @@ footer{
 }
 
 #tiles h3{
+    display: inline;
     background-color: var(--c-secondary);
     font-size: 2rem;
     padding: 1rem;
@@ -152,16 +150,24 @@ footer{
     flex: 1 0 200px;
 }
 
+/* Hover items for links*/
+a:hover{
+    background-color:var(--c-secondary);
+    color: var(--c-main);
+}
+
 #tiles a:hover h3{
     background-color:var(--c-main);
     color: var(--c-secondary);
 }
 
+#tiles a:hover{
+    border: 4px solid var(--c-main);
+    filter: drop-shadow(8px 8px 10px var(--c-main));
+}
 
 
-
-
-
+/* @media screen items for flexible screen sizes */
 @media screen and (min-width: 769px) {
     #hero-image {
         justify-content: right;
@@ -187,24 +193,22 @@ footer{
     }
 }
 
-/* need this part to make surf report taller*/
 @media screen and (min-width:769px){
     #surf-report{
        flex: 1 0 90%;
-       
-    }
-}
-@media screen and (min-width:769px){
-    #surf-report h3{
-       
-       
+       min-height: 450px;
     }
 }
 
+@media screen and (min-width:769px){
+    #surf-report h3{
+        top:365px;
+    }
+}
 
 @media screen and (min-width:769px){
     #led-wall, #calculator, #pastel-puzzels, #run-buddy, #horiseon{
-       flex: 1 0 calc(45%);
+       flex: 1 0 45%;
     }
 }
 
