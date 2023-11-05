@@ -129,7 +129,6 @@ footer{
 
 #surf-report{
     background-image: linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)),url(../images/02-portfolio-4.jpg);
-    
     flex: 1 0 200px;
 }
 #led-wall{
@@ -148,10 +147,19 @@ footer{
     background-image: linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)),url(../images/02-run-buddy.jpg);
     flex: 1 0 200px;
 }
-#Horiseon{
+#horiseon{
     background-image: linear-gradient(rgba(25, 65, 140, 0.25),rgba(25,65,140,.25)),url(../images/01-html-css-git-homework-demo.png);
     flex: 1 0 200px;
 }
+
+#tiles a:hover h3{
+    background-color:var(--c-main);
+    color: var(--c-secondary);
+}
+
+
+
+
 
 
 @media screen and (min-width: 769px) {
@@ -179,6 +187,26 @@ footer{
     }
 }
 
+/* need this part to make surf report taller*/
+@media screen and (min-width:769px){
+    #surf-report{
+       flex: 1 0 90%;
+       
+    }
+}
+@media screen and (min-width:769px){
+    #surf-report h3{
+       
+       
+    }
+}
+
+
+@media screen and (min-width:769px){
+    #led-wall, #calculator, #pastel-puzzels, #run-buddy, #horiseon{
+       flex: 1 0 calc(45%);
+    }
+}
 
 @media screen and (min-width: 993px) {
     header, #about, #work, footer{
